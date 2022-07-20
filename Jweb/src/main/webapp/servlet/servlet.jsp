@@ -4,10 +4,10 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>서블릿에 요청하기</title>
 </head>
 <body>
-	<form action="loginProcess.jsp" method="post">
+	<form action="../login2" method="post">
       <p>
          <label for="userid">아이디 : </label>
          <input type="text" id="userid" name="userid">
@@ -16,9 +16,8 @@
          <label for="passwd">비밀번호 : </label>
          <input type="password" id="passwd" name="passwd">
       </p>
-      <p>
-       <input type="submit" value = "전송">
-      </p>
+      <p><input type="hidden" name="phone" value = "010-1234-5678">
+      <p><input type="submit" value = "전송">
    </form>
 </body>
 </html>

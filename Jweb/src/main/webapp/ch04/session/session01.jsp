@@ -4,10 +4,10 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>세션 발급</title>
 </head>
 <body>
-	<form action="loginProcess.jsp" method="post">
+	<form action="session01_process.jsp" method="post">
       <p>
          <label for="userid">아이디 : </label>
          <input type="text" id="userid" name="userid">
@@ -19,6 +19,6 @@
       <p>
        <input type="submit" value = "전송">
       </p>
-   </form>
+	</form>
 </body>
 </html>
