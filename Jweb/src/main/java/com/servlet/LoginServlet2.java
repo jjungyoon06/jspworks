@@ -9,12 +9,12 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-	@WebServlet("/login2")
-	public class LoginServlet2 extends HttpServlet {
+@WebServlet("/login2")
+public class LoginServlet2 extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-	
+		
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -31,11 +31,13 @@ import javax.servlet.http.HttpServletResponse;
 		String phone = request.getParameter("phone");
 		
 		String data = "<html><body>";
-			   data += "<p>아이디 : " + id;
-			   data += "<p>비밀번호 : " + pwd;
-			   data += "<p>전화번호 : " + phone;
+			   data += "<p>아이디: " + id;
+			   data += "<p>비밀번호: " + pwd;
+			   data += "<p>전화번호: " + phone;
 			   data += "</body></html>";
+			   
 		out.println(data);
 	}
 
 }
+
