@@ -1,16 +1,19 @@
 <%@page import="com.dao.AddrBook"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>주소 추가</title>
+<link rel="stylesheet" href="../resources/css/addrbook.css">
+</head>
 <jsp:useBean id="abDAO" class="com.dao.AddrBookDAO" scope="application"/>
 <%
 	String uname = request.getParameter("username"); //username 속성 값 가져오기
 	AddrBook addrBook = abDAO.getAbByUserName(uname); //dao에서도 메소드 호출
 %>
-
 <body>
-
-	<link rel="stylesheet" href="../resources/css/addrbook.css">
-
 	<div id="container">
 		<h2>상세 보기</h2>
 		<hr>
